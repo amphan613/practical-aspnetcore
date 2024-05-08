@@ -31,6 +31,7 @@ Greetings from Cairo, Egypt. You can [sponsor](https://github.com/sponsors/dodyg
 | [gRPC](/projects/grpc) (including grpc-Web)                             | 12  |                                                                              |
 | [Health Check](/projects/health-check)                                  | 6   |                                                                              |
 | [IHttpClientFactory](/projects/httpclientfactory)                       | 4   |                                                                              |
+| [IHostedLifeCycleService](/projects/i-hosted-lifecycle-service)         | 1   | .NET8                                                                        | 
 | [IHostedService](/projects/ihosted-service)                             | 2   |                                                                              |
 | [Logging](/projects/logging)                                            | 4   |                                                                              |
 | [Localization and Globalization](/projects/localization)                | 6   |                                                                              |

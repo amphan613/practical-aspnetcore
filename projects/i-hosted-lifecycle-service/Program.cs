@@ -6,13 +6,13 @@ using Microsoft.Extensions.DependencyInjection;
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddHostedService<ExampleHostedService>();
 builder.Services.AddLogging(opt =>
-     {
-         opt.AddSimpleConsole(c =>
-         {
-            c.SingleLine = true;
-            c.TimestampFormat = "[HH:mm:ss] ";
-         });
+{
+    opt.AddSimpleConsole(c =>
+    {
+        c.SingleLine = true;
+        c.TimestampFormat = "[HH:mm:ss] ";
     });
+});
 
 using IHost host = builder.Build();
 
@@ -44,7 +44,6 @@ public class ExampleHostedService : IHostedLifecycleService
     
     public async Task StartedAsync(CancellationToken cancellationToken){
         _logger.LogInformation("Step #4: StartedAsync");
-
         await Task.Yield();
     }
 
